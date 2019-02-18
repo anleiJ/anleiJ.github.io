@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="戴杰">
+
+
+
+<meta name="description" content="bootstrap边学边做记（二） 如何制作一个固定导航栏？">
+<meta name="keywords" content="bootstrap,入门,web前端">
+<meta property="og:type" content="article">
+<meta property="og:title" content="bootstrap边学边做记（二）：导航条制作">
+<meta property="og:url" content="http://anleifordj.top/2019/02/16/bootstrap边学边做记（二）：导航条制作/index.html">
+<meta property="og:site_name" content="anlei&#39;s blog">
+<meta property="og:description" content="bootstrap边学边做记（二） 如何制作一个固定导航栏？">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08av8we7kj31ha0fgq95.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08bv38asaj30wf02ct8o.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08byppwqij31hc0a5dgh.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08c2uwa89j31h90bbmxa.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08caymrtpj31hc04rdg1.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08cc859ctj30gl0drgmd.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08dln7qnuj30qn08pmxk.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08dnzer7uj31hb070jrl.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08dpqas3yj31hc079dgc.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08dqwv9yxj30jp0j6jsa.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08dsn2t2dj30vv0j6409.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08f8oduu3j30y706iwem.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08fdjceosj31h903pjrs.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08fcmw75oj31ha023mxe.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08fhnrf0kj30di0n2dg0.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08fkxj74pj30c80280sk.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08fn0uk0kj30ya0dfq3h.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08fo4k52sj31hc0is755.jpg">
+<meta property="og:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08fpjxdevj31hc0kcgm6.jpg">
+<meta property="og:updated_time" content="2019-02-18T09:48:15.656Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="bootstrap边学边做记（二）：导航条制作">
+<meta name="twitter:description" content="bootstrap边学边做记（二） 如何制作一个固定导航栏？">
+<meta name="twitter:image" content="http://ww1.sinaimg.cn/large/005zkTVagy1g08av8we7kj31ha0fgq95.jpg">
+
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="anlei&#39;s blog" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/bitbug_favicon.ico">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>bootstrap边学边做记（二）：导航条制作 | anlei&#39;s blog</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: true
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head></html>
+
+<body>
+  <!-- 插入音乐 -->
+    <link rel="stylesheet" href="/dist/APlayer.min.css">
+    <div id="aplayer" ></div>
+    <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+    <script type="text/javascript" src="/dist/music.js"></script>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/touxiang.jpg" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">戴杰</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">大学生一枚，励志成为高级前端工程师</p>
+        
+
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="查找..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false">
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class="no-result">No results found <i class="fa fa-spinner fa-pulse"></i></p>
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                            <li><a href="/my-job/">简历</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa GitHub" href="https://github.com/anleiJ?tab=repositories" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa 知乎" href="/zhihu" title="知乎"></a>
+                            
+                                <a class="fa CSDN" href="https://blog.csdn.net/weixin_40842539" title="CSDN"></a>
+                            
+                                <a class="fa bilibili" href="https://space.bilibili.com/58094933" title="bilibili"></a>
+                            
+                                <a class="fa QQ" href="tencent://message/?Menu=yes&uin=809979314" title="QQ"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/bootstrap/">bootstrap</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web前端/">web前端</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/入门/">入门</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://sziit.com.cn/">母校</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://wiki.joyme.com/ny/%E9%A6%96%E9%A1%B5">诺亚wiki</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+            
+        </div>
+    </header>                
+</div>
+
+    </div>
+    
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">戴杰</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/touxiang.jpg" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">戴杰</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">大学生一枚，励志成为高级前端工程师</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                    <li><a href="/my-job/">简历</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/anleiJ?tab=repositories" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                                <a class="fa 知乎" target="_blank" href="/zhihu" title="知乎"></a>
+                            
+                                <a class="fa CSDN" target="_blank" href="https://blog.csdn.net/weixin_40842539" title="CSDN"></a>
+                            
+                                <a class="fa bilibili" target="_blank" href="https://space.bilibili.com/58094933" title="bilibili"></a>
+                            
+                                <a class="fa QQ" target="_blank" href="tencent://message/?Menu=yes&uin=809979314" title="QQ"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
+</nav>
+      <div class="body-wrap"><article id="post-bootstrap边学边做记（二）：导航条制作" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/02/16/bootstrap边学边做记（二）：导航条制作/" class="article-date">
+      <time datetime="2019-02-16T05:41:11.000Z" itemprop="datePublished">2019-02-16</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      bootstrap边学边做记（二）：导航条制作
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bootstrap/">bootstrap</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web前端/">web前端</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/入门/">入门</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><strong>bootstrap边学边做记（二）</strong></p>
+<p>如何制作一个固定导航栏？<br><a id="more"></a></p>
+<p><the rest of contents | 余下全文></the></p>
+<hr>
+
+<h1 id="bootstrap-nav"><a href="#bootstrap-nav" class="headerlink" title="bootstrap : nav"></a>bootstrap : nav</h1><h2 id="1-start"><a href="#1-start" class="headerlink" title="1.start"></a>1.start</h2><p>bootstrap提供了丰富的组件，在这里查找nav，如下图所示：<br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08av8we7kj31ha0fgq95.jpg" alt="图片"></p>
+<p>2.找到模板，粘贴到你的项目上，ctrl+s，然后浏览器运行<br>代码：</p>
+<h3 id="1-Code-template-before-modification"><a href="#1-Code-template-before-modification" class="headerlink" title="1.Code template (before modification)"></a>1.Code template (before modification)</h3><blockquote>
+<p>中：1.代码模板（修改前）</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;nav class=&quot;navbar navbar-expand-lg navbar-light bg-light&quot;&gt;</span><br><span class="line">  &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;</span><br><span class="line">  &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarSupportedContent&quot; aria-controls=&quot;navbarSupportedContent&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;</span><br><span class="line">    &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;</span><br><span class="line">  &lt;/button&gt;</span><br><span class="line"></span><br><span class="line">  &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarSupportedContent&quot;&gt;</span><br><span class="line">    &lt;ul class=&quot;navbar-nav mr-auto&quot;&gt;</span><br><span class="line">      &lt;li class=&quot;nav-item active&quot;&gt;</span><br><span class="line">        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Home &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;</span><br><span class="line">      &lt;/li&gt;</span><br><span class="line">      &lt;li class=&quot;nav-item&quot;&gt;</span><br><span class="line">        &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;</span><br><span class="line">      &lt;/li&gt;</span><br><span class="line">      &lt;li class=&quot;nav-item dropdown&quot;&gt;</span><br><span class="line">        &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;navbarDropdown&quot; role=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;</span><br><span class="line">          Dropdown</span><br><span class="line">        &lt;/a&gt;</span><br><span class="line">        &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdown&quot;&gt;</span><br><span class="line">          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;</span><br><span class="line">          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;</span><br><span class="line">          &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;</span><br><span class="line">          &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      &lt;/li&gt;</span><br><span class="line">      &lt;li class=&quot;nav-item&quot;&gt;</span><br><span class="line">        &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;</span><br><span class="line">      &lt;/li&gt;</span><br><span class="line">    &lt;/ul&gt;</span><br><span class="line">    &lt;form class=&quot;form-inline my-2 my-lg-0&quot;&gt;</span><br><span class="line">      &lt;input class=&quot;form-control mr-sm-2&quot; type=&quot;search&quot; placeholder=&quot;Search&quot; aria-label=&quot;Search&quot;&gt;</span><br><span class="line">      &lt;button class=&quot;btn btn-outline-success my-2 my-sm-0&quot; type=&quot;submit&quot;&gt;Search&lt;/button&gt;</span><br><span class="line">    &lt;/form&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/nav&gt;</span><br></pre></td></tr></table></figure>
+<p>运行结果:<br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08bv38asaj30wf02ct8o.jpg" alt="在这里插入图片描述"><hr></p>
+<h3 id="Code-template-modified"><a href="#Code-template-modified" class="headerlink" title="Code template(modified)"></a>Code template(modified)</h3><blockquote>
+<p>中：代码模板（修改后）</p>
+</blockquote>
+<p>3.然后进行一些小修改：<br>代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">&lt;!doctype html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;!-- Required meta tags --&gt;</span><br><span class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, shrink-to-fit=no&quot;&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- Bootstrap CSS --&gt;</span><br><span class="line">    &lt;link rel=&quot;stylesheet&quot; href=&quot;./CSS/bootstrap.css&quot; &gt;</span><br><span class="line"></span><br><span class="line">    &lt;title&gt;导航栏制作&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line">  &lt;body&gt;</span><br><span class="line">      &lt;!-- 粘性顶部 --&gt;</span><br><span class="line">    &lt;nav class=&quot;navbar sticky-top navbar-expand-lg navbar-dark bg-dark&quot;&gt;</span><br><span class="line">        &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;公司名字&lt;/a&gt;</span><br><span class="line">        &lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarSupportedContent&quot; aria-controls=&quot;navbarSupportedContent&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;</span><br><span class="line">          &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;</span><br><span class="line">        &lt;/button&gt;</span><br><span class="line">      </span><br><span class="line">        &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarSupportedContent&quot;&gt;</span><br><span class="line">          &lt;ul class=&quot;navbar-nav mr-auto&quot;&gt;</span><br><span class="line">              &lt;!-- active保持高亮主题 --&gt;</span><br><span class="line">            &lt;li class=&quot;nav-item active&quot;&gt;</span><br><span class="line">              &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Home </span><br><span class="line">                  &lt;!-- 屏幕阅读器 --&gt;</span><br><span class="line">                  &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;</span><br><span class="line">            &lt;/a&gt;</span><br><span class="line">            &lt;/li&gt;</span><br><span class="line">            &lt;li class=&quot;nav-item&quot;&gt;</span><br><span class="line">              &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;</span><br><span class="line">            &lt;/li&gt;</span><br><span class="line">            &lt;!-- 下拉菜单 --&gt;</span><br><span class="line">            &lt;li class=&quot;nav-item dropdown&quot;&gt;</span><br><span class="line">              &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; id=&quot;navbarDropdown&quot; role=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;</span><br><span class="line">                Dropdown</span><br><span class="line">              &lt;/a&gt;</span><br><span class="line">              &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdown&quot;&gt;</span><br><span class="line">                &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;</span><br><span class="line">                &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;</span><br><span class="line">                &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;</span><br><span class="line">                &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;</span><br><span class="line">              &lt;/div&gt;</span><br><span class="line">            &lt;/li&gt;</span><br><span class="line">            &lt;li class=&quot;nav-item&quot;&gt;</span><br><span class="line">              &lt;a class=&quot;nav-link disabled&quot; href=&quot;#&quot; tabindex=&quot;-1&quot; aria-disabled=&quot;true&quot;&gt;Disabled&lt;/a&gt;</span><br><span class="line">            &lt;/li&gt;</span><br><span class="line">          &lt;/ul&gt;</span><br><span class="line">          &lt;form class=&quot;form-inline my-2 my-lg-0&quot;&gt;</span><br><span class="line">            &lt;input class=&quot;form-control mr-sm-2&quot; type=&quot;search&quot; placeholder=&quot;Search&quot; aria-label=&quot;Search&quot;&gt;</span><br><span class="line">            &lt;button class=&quot;btn btn-outline-success my-2 my-sm-0&quot; type=&quot;submit&quot;&gt;Search&lt;/button&gt;</span><br><span class="line">          &lt;/form&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">      &lt;/nav&gt;</span><br><span class="line">     </span><br><span class="line">    &lt;!-- Optional JavaScript --&gt;</span><br><span class="line">    &lt;!-- jQuery first, then Popper.js, then Bootstrap JS --&gt;</span><br><span class="line">    &lt;script src=&quot;./JS/jquery.js&quot; &gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=&quot;./JS/popper.js&quot; &gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=&quot;./JS/bootstrap.min.js&quot; &gt;&lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<p>运行结果:<br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08byppwqij31hc0a5dgh.jpg" alt="在这里插入图片描述"><hr><br><br></p>
+<h2 id="2-navbar-brand"><a href="#2-navbar-brand" class="headerlink" title="2.navbar-brand"></a>2.navbar-brand</h2><p></p><p style="font-size:20px;"><b>.navbar-brand 适用于您的公司，产品或项目名称。下图是有无.navbar-brand区别</b></p><br><b>1.无.navbar-brand</b><br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08c2uwa89j31h90bbmxa.jpg" alt="在这里插入图片描述"><br><b>2.有.navbar-brand</b><br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08caymrtpj31hc04rdg1.jpg" alt="在这里插入图片描述"><p></p>
+<h3 id="nav-CSS"><a href="#nav-CSS" class="headerlink" title="nav :CSS"></a>nav :CSS</h3><p><b>源码里的CSS代码片段：</b><br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08cc859ctj30gl0drgmd.jpg" alt="在这里插入图片描述"><br></p>
+<p></p><p style="color:#f00"><b>因为这里是在.navbar-dark里，所以他会变成黑色</b></p><br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08dln7qnuj30qn08pmxk.jpg" alt="在这里插入图片描述"><p></p>
+<h3 id="navbar-nav-CSS"><a href="#navbar-nav-CSS" class="headerlink" title=".navbar-nav :CSS"></a>.navbar-nav :CSS</h3><p>.navbar-nav 用于全高度和轻量级导航（包括对下拉菜单的支持）。</p>
+<p>没有.navbar-nav 效果:<br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08dnzer7uj31hb070jrl.jpg" alt="在这里插入图片描述"><br>有.navbar-nav 效果<br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08dpqas3yj31hc079dgc.jpg" alt="在这里插入图片描述"><br>CSS代码片段：<br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08dqwv9yxj30jp0j6jsa.jpg" alt="在这里插入图片描述"></p>
+<p></p><p style="color:#f00"><b>因为这里是在.navbar-dark里，所以他会变成黑色</b></p><br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08dsn2t2dj30vv0j6409.jpg" alt="在这里插入图片描述"><p></p>
+<hr>
+
+
+<h3 id="add-icon"><a href="#add-icon" class="headerlink" title="add icon"></a>add icon</h3><blockquote>
+<p>中文翻译：4.如何添加图标</p>
+</blockquote>
+<p>添加图像.navbar-brand可能总是需要自定义样式或实用程序来正确调整大小。<br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08f8oduu3j30y706iwem.jpg" alt="在这里插入图片描述"><br><i>建议不要给我搞这样的图(下图)，如果有这样的图怎么办，切吧</i><br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08fdjceosj31h903pjrs.jpg" alt>一顿ps操作后，现在好看多了,（顺便宣传下我们学校）<br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08fcmw75oj31ha023mxe.jpg" alt="PS操作的图片"><hr></p>
+<h1 id="Code-explanation"><a href="#Code-explanation" class="headerlink" title="Code explanation"></a>Code explanation</h1><blockquote>
+<p>中文翻译:代码解释</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;button class=&quot;navbar-toggler&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarSupportedContent&quot; aria-controls=&quot;navbarSupportedContent&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;</span><br><span class="line">         &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;</span><br><span class="line">&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>data-toggle=&quot;collapse&quot; 添加到您想要展开或折叠的组件的链接上。
+href 或 data-target 属性添加到父组件，它的值是子组件的 id。
+data-parent 属性把折叠面板（accordion）的 id 添加到要展开或折叠的组件的链接上。
+aria-* ：这属性是跟盲人阅读器有关
+</code></pre><p>.navbar-toggler用于我们的折叠插件和其他导航切换行为。<br>效果：当他小于一定宽度时候就会显示出来<br>.collapse.navbar-collapse 用于通过父断点对导航栏内容进行分组和隐藏。<br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08fhnrf0kj30di0n2dg0.jpg" alt=".collapse.navbar-collapse样式"></p>
+<p>.form-inline 将各种表单控件和组件放在导航栏中,如输入框，按钮</p>
+<p><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08fkxj74pj30c80280sk.jpg" alt="form-inline样式"></p>
+<p>.navbar-text 用于添加垂直居中的文本字符串。<br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08fn0uk0kj30ya0dfq3h.jpg" alt="在这里插入图片描述"></p>
+<hr>
+
+
+<p>6.固定导航与粘性导航：（欢迎补充）</p>
+<p>Fixed top,图示：<br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08fo4k52sj31hc0is755.jpg" alt="在这里插入图片描述"></p>
+<p>Sticky top，图示：<br><img src="http://ww1.sinaimg.cn/large/005zkTVagy1g08fpjxdevj31hc0kcgm6.jpg" alt="在这里插入图片描述"></p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2019/02/16/bootstrap边学边做记（二）：导航条制作/">bootstrap边学边做记（二）：导航条制作</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">戴杰</a></p>
+        <p><span>发布时间:</span>2019-02-16, 13:41:11</p>
+        <p><span>最后更新:</span>2019-02-18, 17:48:15</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2019/02/16/bootstrap边学边做记（二）：导航条制作/" title="bootstrap边学边做记（二）：导航条制作">http://anleifordj.top/2019/02/16/bootstrap边学边做记（二）：导航条制作/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://anleifordj.top/2019/02/16/bootstrap边学边做记（二）：导航条制作/　　作者: 戴杰" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2019/02/15/bootstrap边学边做记（一）/">
+                    bootstrap边学边做记（一）
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#bootstrap-nav"><span class="toc-number">1.</span> <span class="toc-text">bootstrap : nav</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-start"><span class="toc-number">1.1.</span> <span class="toc-text">1.start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Code-template-before-modification"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.Code template (before modification)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Code-template-modified"><span class="toc-number">1.1.2.</span> <span class="toc-text">Code template(modified)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-navbar-brand"><span class="toc-number">1.2.</span> <span class="toc-text">2.navbar-brand</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#nav-CSS"><span class="toc-number">1.2.1.</span> <span class="toc-text">nav :CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#navbar-nav-CSS"><span class="toc-number">1.2.2.</span> <span class="toc-text">.navbar-nav :CSS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#add-icon"><span class="toc-number">1.2.3.</span> <span class="toc-text">add icon</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Code-explanation"><span class="toc-number">2.</span> <span class="toc-text">Code explanation</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"bootstrap边学边做记（二）：导航条制作　| anlei's blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2019/02/15/bootstrap边学边做记（一）/" title="下一篇: bootstrap边学边做记（一）">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/02/16/bootstrap边学边做记（二）：导航条制作/">bootstrap边学边做记（二）：导航条制作</a></li><li class="post-list-item"><a class="post-list-link" href="/2019/02/15/bootstrap边学边做记（一）/">bootstrap边学边做记（一）</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2019 戴杰
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+
+
+</script>
+
+<script type="text/javascript" src="/js/clicklove.js"></script>
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/22.2017.cba-normal.model.json"},"display":{"position":"right","width":150,"height":300,"mobile":{"show":true}},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
