@@ -5,6 +5,13 @@ const ap = new APlayer({
     lrcType: 3,
     audio: [
       {
+        name: "抚仙湖",
+        artist: '李健',
+        url: 'http://other.web.ra01.sycdn.kuwo.cn/resource/n3/192/90/75/1141601382.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/73/49/1131928591.jpg',
+        lrc: 'song-post/李健-抚仙湖.lrc'
+      },
+      {
         name: "在水一方",
         artist: '李健',
         url: 'http://other.web.ri01.sycdn.kuwo.cn/resource/n2/31/23/2648161877.mp3',
