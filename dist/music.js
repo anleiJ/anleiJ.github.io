@@ -145,5 +145,12 @@ const ap = new APlayer({
         cover: 'http://star.kuwo.cn/star/starheads/180/73/49/1131928591.jpg',
         lrc: 'song-post/李健-抚仙湖.lrc'
       },
+      {
+        name: "梦在燃烧",
+        artist: '汤子星',
+        url: 'http://other.web.ra01.sycdn.kuwo.cn/resource/n1/128/41/50/165997948.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/88/91/3722075803.jpg',
+        lrc: 'song-post/三国演义主题曲-梦在燃烧.lrc'
+      }
     ]
 });
