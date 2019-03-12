@@ -151,6 +151,13 @@ const ap = new APlayer({
         url: 'http://other.web.ra01.sycdn.kuwo.cn/resource/n1/128/41/50/165997948.mp3',
         cover: 'http://star.kuwo.cn/star/starheads/180/88/91/3722075803.jpg',
         lrc: 'song-post/三国演义主题曲-梦在燃烧.lrc'
-      }
+      },
+      {
+        name: "【数码宝贝OP】Butter-Fly",
+        artist: 'SwZap',
+        url: 'http://sb.sycdn.kuwo.cn/resource/n1/93/77/38157358.mp3',
+        cover: 'http://image.kuwo.cn/website/pc/default/artistDefault.jpg',
+        lrc: ''
+      },
     ]
 });
