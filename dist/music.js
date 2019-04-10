@@ -276,7 +276,7 @@ const ap = new APlayer({
       {
         name: "是否",
         artist: '齐豫',
-        url: 'http://sk.sycdn.kuwo.cn/resource/n2/29/49/2849561093.mp3',
+        url: 'http://sk.sycdn.kuwo.cn/resource/n3/38/54/1096294605.mp3',
         cover: 'https://tse1-mm.cn.bing.net/th?id=OIP.mdVcz2CKKEdI93-mOoq-HAHaLH&w=70&h=105&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2',
         lrc: ''
       }
