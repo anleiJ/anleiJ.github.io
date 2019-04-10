@@ -97,6 +97,13 @@ const ap = new APlayer({
         lrc: 'song-post/李健-假如爱有天意-(电影《太平轮·彼岸》推广曲).lrc'
       },
       {
+        name: "抚仙湖",
+        artist: '李健',
+        url: 'http://other.web.ra01.sycdn.kuwo.cn/resource/n3/192/90/75/1141601382.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/73/49/1131928591.jpg',
+        lrc: 'song-post/李健-抚仙湖.lrc'
+      },
+      {
         name: '秋语',
         artist: '刘欢',
         url: 'http://sk.sycdn.kuwo.cn/resource/n1/34/32/3327926324.mp3',
@@ -118,6 +125,49 @@ const ap = new APlayer({
         lrc: 'song-post/'
       },
       {
+        name: '从前慢',
+        artist: '刘欢',
+        url: 'http://so.sycdn.kuwo.cn/resource/n2/44/93/4258922412.mp3',
+        cover: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000001vMyUg24lPJE.jpg?max_age=2592000',
+        lrc: ''
+      },
+      {
+        name: '带着地球去流浪',
+        artist: '刘欢',
+        url: 'http://sl.sycdn.kuwo.cn/resource/n3/56/0/2424417194.mp3',
+        cover: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000001vMyUg24lPJE.jpg?max_age=2592000',
+        lrc: ''
+      },
+      {
+        name: '璐璐',
+        artist: '刘欢',
+        url: 'http://sm.sycdn.kuwo.cn/resource/n3/38/99/2436388549.mp3',
+        cover: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000001vMyUg24lPJE.jpg?max_age=2592000',
+        lrc: ''
+      },
+      {
+        name: '遥远的璐',
+        artist: '刘欢',
+        url: 'http://sm.sycdn.kuwo.cn/resource/n1/2/30/2925420282.mp3',
+        cover: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000001vMyUg24lPJE.jpg?max_age=2592000',
+        lrc: ''
+      },
+      {
+        name: '弯弯的月亮',
+        artist: '刘欢',
+        url: 'http://sm.sycdn.kuwo.cn/resource/n2/60/94/3674005459.mp3',
+        cover: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000001vMyUg24lPJE.jpg?max_age=2592000',
+        lrc: ''
+      },
+      {
+        name: '沧海一声笑+好汉歌',
+        artist: '刘欢',
+        url: 'http://other.web.nf01.sycdn.kuwo.cn/resource/n2/26/33/2049546449.mp3',
+        cover: 'https://y.gtimg.cn/music/photo_new/T002R300x300M000001vMyUg24lPJE.jpg?max_age=2592000',
+        lrc: ''
+      },
+
+      {
         name: '阿刁',
         artist: '张韶涵',
         url: 'http://other.web.nf01.sycdn.kuwo.cn/resource/n3/26/41/4167610444.mp3',
@@ -138,13 +188,7 @@ const ap = new APlayer({
         cover: 'http://star.kuwo.cn/star/starheads/180/12/85/1062942743.jpg',
         lrc: 'song-post/张韶涵-再见青春 (Live).lrc'
       },
-      {
-        name: "抚仙湖",
-        artist: '李健',
-        url: 'http://other.web.ra01.sycdn.kuwo.cn/resource/n3/192/90/75/1141601382.mp3',
-        cover: 'http://star.kuwo.cn/star/starheads/180/73/49/1131928591.jpg',
-        lrc: 'song-post/李健-抚仙湖.lrc'
-      },
+      
       {
         name: "梦在燃烧",
         artist: '汤子星',
@@ -159,5 +203,82 @@ const ap = new APlayer({
         cover: 'http://image.kuwo.cn/website/pc/default/artistDefault.jpg',
         lrc: ''
       },
+      {
+        name: "她",
+        artist: '声入人心男团',
+        url: 'http://sm.sycdn.kuwo.cn/resource/n2/68/87/3555117567.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/72/36/2225019929.jpg',
+        lrc: ''
+      },
+      {
+        name: "真爱乐章",
+        artist: '声入人心男团',
+        url: 'http://sn.sycdn.kuwo.cn/resource/n3/70/90/70306288.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/72/36/2225019929.jpg',
+        lrc: ''
+      },
+      {
+        name: "心脏",
+        artist: '声入人心男团',
+        url: 'http://sm.sycdn.kuwo.cn/resource/n3/91/80/1673777309.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/72/36/2225019929.jpg',
+        lrc: ''
+      },
+      {
+        name: "总有一天",
+        artist: '声入人心男团',
+        url: 'http://sn.sycdn.kuwo.cn/resource/n1/53/11/2574396014.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/72/36/2225019929.jpg',
+        lrc: ''
+      },
+      {
+        name: "大船",
+        artist: '声入人心男团',
+        url: 'http://so.sycdn.kuwo.cn/resource/n1/2/24/3079878289.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/72/36/2225019929.jpg',
+        lrc: ''
+      },
+      {
+        name: "Катюша",
+        artist: 'Polina Gagarina',
+        url: 'http://sk.sycdn.kuwo.cn/resource/n2/57/84/4012729082.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/60/91/506527592.jpg',
+        lrc: ''
+      },
+      {
+        name: "贝加尔湖畔",
+        artist: 'Polina Gagarina',
+        url: 'http://sm.sycdn.kuwo.cn/resource/n1/46/64/1837439032.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/60/91/506527592.jpg',
+        lrc: ''
+      },
+      {
+        name: "Cтороною дождь + Колыбельная",
+        artist: 'Polina Gagarina',
+        url: 'http://sn.sycdn.kuwo.cn/resource/n1/51/60/2488024279.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/60/91/506527592.jpg',
+        lrc: ''
+      },
+      {
+        name: "一万次悲伤",
+        artist: '逃跑计划',
+        url: 'http://other.web.nf01.sycdn.kuwo.cn/resource/n3/80/61/3245409526.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/69/82/4224884544.jpg',
+        lrc: ''
+      },
+      {
+        name: "你的爱情",
+        artist: '逃跑计划',
+        url: 'http://sk.sycdn.kuwo.cn/resource/n2/29/49/2849561093.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/69/82/4224884544.jpg',
+        lrc: ''
+      },
+      {
+        name: "是否",
+        artist: '齐豫',
+        url: 'http://sk.sycdn.kuwo.cn/resource/n2/29/49/2849561093.mp3',
+        cover: 'https://tse1-mm.cn.bing.net/th?id=OIP.mdVcz2CKKEdI93-mOoq-HAHaLH&w=70&h=105&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2',
+        lrc: ''
+      }
     ]
 });
