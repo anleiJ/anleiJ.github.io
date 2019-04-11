@@ -274,10 +274,171 @@ const ap = new APlayer({
         lrc: ''
       },
       {
+        name: "夜空中最亮的星",
+        artist: '逃跑计划',
+        url: 'http://other.web.re01.sycdn.kuwo.cn/resource/n1/49/32/1391843923.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/69/82/4224884544.jpg',
+        lrc: ''
+      },
+      {
         name: "是否",
         artist: '齐豫',
         url: 'http://sk.sycdn.kuwo.cn/resource/n3/38/54/1096294605.mp3',
         cover: 'https://tse1-mm.cn.bing.net/th?id=OIP.mdVcz2CKKEdI93-mOoq-HAHaLH&w=70&h=105&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2',
+        lrc: ''
+      },
+      {
+        name: "隐形的翅膀 + You Raise Me Up",
+        artist: '齐豫',
+        url: 'http://so.sycdn.kuwo.cn/resource/n2/56/73/1806053038.mp3',
+        cover: 'https://tse1-mm.cn.bing.net/th?id=OIP.mdVcz2CKKEdI93-mOoq-HAHaLH&w=70&h=105&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2',
+        lrc: ''
+      },
+      {
+        name: "因为爱情",
+        artist: '齐豫&毛不易',
+        url: 'http://sm.sycdn.kuwo.cn/resource/n2/75/62/892854674.mp3',
+        cover: 'https://tse1-mm.cn.bing.net/th?id=OIP.mdVcz2CKKEdI93-mOoq-HAHaLH&w=70&h=105&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2',
+        lrc: ''
+      },
+      {
+        name: "今世",
+        artist: '齐豫',
+        url: 'http://sm.sycdn.kuwo.cn/resource/n2/13/64/2574671845.mp3',
+        cover: 'https://tse1-mm.cn.bing.net/th?id=OIP.mdVcz2CKKEdI93-mOoq-HAHaLH&w=70&h=105&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2',
+        lrc: ''
+      },
+      {
+        name: "女人花",
+        artist: '齐豫',
+        url: 'http://sm.sycdn.kuwo.cn/resource/n1/0/95/2967226328.mp3',
+        cover: 'https://tse1-mm.cn.bing.net/th?id=OIP.mdVcz2CKKEdI93-mOoq-HAHaLH&w=70&h=105&c=8&rs=1&qlt=90&dpr=1.25&pid=3.1&rm=2',
+        lrc: ''
+      },
+      {
+        name: "再也没有",
+        artist: '汪峰',
+        url: 'http://other.web.nf03.sycdn.kuwo.cn/resource/n2/90/84/3591336757.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/40/65/1990927708.jpg',
+        lrc: 'song-post/汪峰-再也没有.lrc'
+      },
+      {
+        name: "我爱你中国",
+        artist: '汪峰',
+        url: 'http://other.web.nf01.sycdn.kuwo.cn/resource/n3/63/42/3933907161.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/40/65/1990927708.jpg',
+        lrc: ''
+      },
+      {
+        name: "普通disco (Live)",
+        artist: '汪峰',
+        url: 'http://other.web.nf03.sycdn.kuwo.cn/resource/n2/39/95/1083901016.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/40/65/1990927708.jpg',
+        lrc: ''
+      },
+      {
+        name: "儿时 (Live)",
+        artist: '汪峰',
+        url: 'http://other.web.nf01.sycdn.kuwo.cn/resource/n2/23/1/3455076599.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/40/65/1990927708.jpg',
+        lrc: ''
+      },
+      {
+        name: "等待 (Live)",
+        artist: '汪峰',
+        url: 'http://other.web.nf01.sycdn.kuwo.cn/resource/n1/99/14/4233661668.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/40/65/1990927708.jpg',
+        lrc: ''
+      },
+      {
+        name: "消愁 (Live) ",
+        artist: '李晓东',
+        url: 'http://other.web.nf03.sycdn.kuwo.cn/resource/n1/25/58/3950540457.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/44/6/2042965893.jpg',
+        lrc: ''
+      },
+      {
+        name: "后来 (Live) ",
+        artist: '李晓东',
+        url: 'http://other.web.nf01.sycdn.kuwo.cn/resource/n3/69/32/1358101656.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/44/6/2042965893.jpg',
+        lrc: ''
+      },
+      {
+        name: "我心常自在 ",
+        artist: '李晓东',
+        url: 'http://other.web.nf03.sycdn.kuwo.cn/resource/n3/31/47/2606846042.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/44/6/2042965893.jpg',
+        lrc: ''
+      },
+      {
+        name: "海阔天空 ",
+        artist: '韩红',
+        url: 'http://other.web.rf01.sycdn.kuwo.cn/resource/n2/20/42/2147394567.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/44/6/2042965893.jpg',
+        lrc: ''
+      },
+      {
+        name: "飞云之下 ",
+        artist: '韩红&林俊杰',
+        url: 'http://other.web.nf01.sycdn.kuwo.cn/resource/n3/3/10/4279772202.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/44/6/2042965893.jpg',
+        lrc: ''
+      },
+      {
+        name: "美丽的神话 ",
+        artist: '韩红&孙楠',
+        url: 'http://other.web.ra01.sycdn.kuwo.cn/resource/n1/128/17/45/3736678770.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/44/6/2042965893.jpg',
+        lrc: ''
+      },
+      {
+        name: "爱情啊 ",
+        artist: 'The One',
+        url: 'http://other.web.rh01.sycdn.kuwo.cn/resource/n1/15/75/3689551262.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/22/93/2082277630.jpg',
+        lrc: ''
+      },
+      {
+        name: "暗香 ",
+        artist: 'The One',
+        url: 'http://other.web.rf01.sycdn.kuwo.cn/resource/n2/74/13/2303507894.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/22/93/2082277630.jpg',
+        lrc: ''
+      },
+      {
+        name: "夜空最亮的星 ",
+        artist: '谭维维&蒋瑶佳',
+        url: 'http://other.web.nf01.sycdn.kuwo.cn/resource/n3/63/19/2513106205.mp3',
+        cover: 'http://img2.kuwo.cn/star/starheads/240/97/34/2077935317.jpg',
+        lrc: ''
+      },
+      {
+        name: "我好想你 ",
+        artist: '徐佳莹',
+        url: 'http://other.web.rh01.sycdn.kuwo.cn/resource/n2/43/13/4002378419.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/22/9/2987734787.jpg',
+        lrc: ''
+      },
+      {
+        name: "不为谁而作的歌 ",
+        artist: '徐佳莹&&林俊杰',
+        url: 'http://other.web.rh01.sycdn.kuwo.cn/resource/n2/21/2/238375378.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/22/9/2987734787.jpg',
+        lrc: ''
+      },
+      {
+        name: "修炼爱情",
+        artist: '徐佳莹',
+        url: 'http://other.web.rh01.sycdn.kuwo.cn/resource/n2/11/30/708662149.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/22/9/2987734787.jpg',
+        lrc: ''
+      },
+      {
+        name: "莉莉安",
+        artist: '徐佳莹',
+        url: 'http://other.web.rh01.sycdn.kuwo.cn/resource/n3/2/72/1746726293.mp3',
+        cover: 'http://star.kuwo.cn/star/starheads/180/22/9/2987734787.jpg',
         lrc: ''
       }
     ]
